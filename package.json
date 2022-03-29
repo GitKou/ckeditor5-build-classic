@@ -1,11 +1,11 @@
 {
-  "name": "ckeditor5-custom-build",
+  "name": "@lc-nut/ckeditor5-custom-build",
   "author": "CKSource",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
   "version": "0.0.1",
   "license": "SEE LICENSE IN LICENSE.md",
-  "private": true,
   "main": "./build/ckeditor.js",
+  "typings": "./typing.d.ts",
   "devDependencies": {
     "@ckeditor/ckeditor5-autoformat": "^33.0.0",
     "@ckeditor/ckeditor5-basic-styles": "^33.0.0",
@@ -34,12 +34,10 @@
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^4.2.3",
     "webpack": "^5.70.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "store": "^2.0.12"
   },
   "scripts": {
     "build": "webpack --mode production"
-  },
-  "dependencies": {
-    "store": "^2.0.12"
   }
 }
